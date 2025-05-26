@@ -45,19 +45,21 @@ Purpose:
 Allows a hydrogen producer to list a specified amount of H2 tokens for sale on the marketplace at a given price. The tokens are transferred from the producer to the marketplace’s transfer manager account for escrow.
 
 How it works:
-	1.	Creates a new Listing PDA account using a seed of "listing" and the h2_canister address.
-	2.	Stores:
+#### 1.	Creates a new Listing PDA account using a seed of "listing" and the h2_canister address.
+#### 2.	Stores:
 	•	producer: the hydrogen producer’s public key.
 	•	h2_canister: associated hydrogen canister for the batch.
 	•	price: the price per unit (in USDC or another token).
 	•	transfer_manager_ata: the marketplace escrow ATA to hold the H2 tokens.
-	3.	Transfers the specified amount of H2 tokens from the producer’s associated token account (producer_ata) to the transfer_manager_ata (escrow).
+#### 3.	Transfers the specified amount of H2 tokens from the producer’s associated token account (producer_ata) to the transfer_manager_ata (escrow).
 
 Inputs:
 	•	amount — number of grams of H2 tokens to list.
 	•	price — price per gram in USDC (or other tokens).
 
+
 Accounts:
+```
 	•	listing — new account that stores sale metadata.
 	•	producer_authority — signer initiating the listing.
 	•	producer — PDA of the hydrogen producer.
@@ -65,6 +67,7 @@ Accounts:
 	•	producer_ata — producer’s token account holding the H2.
 	•	transfer_manager_ata — escrow ATA where tokens are transferred.
 	•	token_program, associated_token_program, system_program — standard SPL programs.
+```
 
 ### 💰 [sell_h2](programs/marketplace/src/instructions/sell/sell_h2.rs) — Sell H2 Tokens to a Buyer
 
@@ -72,9 +75,9 @@ Purpose:
 Facilitates the sale of H2 tokens from a marketplace listing. Transfers USDC from the buyer to the producer and H2 tokens from escrow to the buyer.
 
 How it works:
-	1.	Validates that the buyer’s offered_price meets or exceeds the listing’s price.
-	2.	Calculates total_payment = amount × offered_price.
-	3.	Transfers:
+#### 1.	Validates that the buyer’s offered_price meets or exceeds the listing’s price.
+#### 2.	Calculates total_payment = amount × offered_price.
+#### 3.	Transfers:
 	•	💵 USDC: From the buyer’s USDC ATA to the producer’s USDC ATA.
 	•	🔄 H2 tokens: From the marketplace escrow (transfer manager ATA) to the buyer’s ATA.
 
@@ -83,6 +86,7 @@ Inputs:
 	•	offered_price — buyer’s offered price per gram.
 
 Accounts:
+```
 	•	listing — the active listing being purchased.
 	•	buyer — signer paying for the tokens.
 	•	producer — the hydrogen producer who will receive payment.
@@ -93,7 +97,7 @@ Accounts:
 	•	transfer_manager — signer (PDA) used to release H2 tokens from escrow.
 	•	config — global market config with bump info.
 	•	token_program, system_program — standard programs used for transfers.
-
+```
 
 ## 🛠️ Technologies Used
 	•	Solana Blockchain: High-performance blockchain platform for scalable decentralized applications.
