@@ -10,7 +10,7 @@ Hydrogen Ukraine is leading multiple hydrogen valley initiatives in regions like
 	•	Digitize hydrogen production and certification
 	•	Enable secure and verifiable hydrogen trading
 	•	Facilitate integration with EU energy systems
-	
+
 # 🧠 Core Functionalities
 
 ## The smart contracts in this repository are designed to:
@@ -23,15 +23,21 @@ Hydrogen Ukraine is leading multiple hydrogen valley initiatives in regions like
 
 ### [register_produce](programs/h2u_contracts/src/instructions/producer/register_produce.rs) Instruction
 
-The register_produce instruction registers a hydrogen production batch based on the electricity consumed by a producer. It performs the following operations :
-	1.	Burns EAC Tokens:
-The burn_eac function is called to burn a specific number of Energy Attribute Certificate (EAC) tokens from the producer’s associated token account (ATA), based on the amount of electricity (in kWh) they consumed. The number of burned tokens equals the consumed kWh, and is also used to update the on-chain EAC PDA state.
-	2.	Calculates H₂ Token Output:
-Hydrogen production is computed using a constant conversion rate (ELECTRICITY_PER_KG_H2 = 60). For every 60 kWh of electricity, 1 kg (1000 grams) of hydrogen is produced. The result is used to determine the amount of H₂ tokens to mint.
-	3.	Mints H₂ Tokens:
+The register_produce instruction registers a hydrogen production batch based on the electricity consumed by a producer. It performs the following operations:
+
+	•	1. Burns EAC Tokens:
+The burn_eac function is called to burn a specific number of Energy Attribute Certificate (EAC) tokens from the producer’s associated token account (ATA), based on the amount of electricity (in kWh) they consumed.
+The number of burned tokens equals the consumed kWh, and is also used to update the on-chain EAC PDA state.
+	•	2. Calculates H₂ Token Output:
+Hydrogen production is computed using a constant conversion rate (ELECTRICITY_PER_KG_H2 = 60).
+For every 60 kWh of electricity, 1 kg (1000 grams) of hydrogen is produced.
+The result is used to determine the amount of H₂ tokens to mint.
+	•	3. Mints H₂ Tokens:
 The mint_h2 function mints the corresponding amount of hydrogen (H₂) tokens to the producer’s ATA, updating the H2Canister PDA to track the total and available hydrogen.
-	4.	Initializes Associated Accounts (if needed):
-Ensures the producer has ATAs for both the EAC and H₂ tokens. These are initialized using init_if_needed if they do not exist.
+	•	4. Initializes Associated Accounts (if needed):
+Ensures the producer has ATAs for both the EAC and H₂ tokens.
+These are initialized using init_if_needed if they do not exist.
+
 
 ### 🏷️ [list_h2](programs/marketplace/src/instructions/list/list_h2.rs) — List H2 Tokens for Sale
 
@@ -59,7 +65,7 @@ Accounts:
 	•	producer_ata — producer’s token account holding the H2.
 	•	transfer_manager_ata — escrow ATA where tokens are transferred.
 	•	token_program, associated_token_program, system_program — standard SPL programs.
-	
+
 ### 💰 [sell_h2](programs/marketplace/src/instructions/sell/sell_h2.rs) — Sell H2 Tokens to a Buyer
 
 Purpose:
