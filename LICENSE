@@ -1,0 +1,118 @@
+PROPRIETARY SOFTWARE LICENCE
+ЛІЦЕНЗІЯ НА ВЛАСНИЦЬКЕ ПРОГРАМНЕ ЗАБЕЗПЕЧЕННЯ
+
+Copyright © 2025–2026
+ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ «ВОДЕНЬ УКРАЇНИ»
+HYDROGEN UKRAINE LLC
+ЄДРПОУ / EDRPOU: 43722769
+01015, м. Київ, вул. Лаврська, буд. 20, Україна
+
+Усі права застережено. All rights reserved.
+
+--------------------------------------------------------------------------
+УКРАЇНСЬКОЮ
+--------------------------------------------------------------------------
+
+1. ПРАВОВЛАСНИК
+
+Це програмне забезпечення, його вихідний код, об'єктний код, конфігурації,
+схеми даних, смартконтракти та супровідна документація (разом — «Програмне
+забезпечення») є об'єктом авторського права.
+
+Майнові права інтелектуальної власності на Програмне забезпечення в повному
+обсязі належать ТОВ «ВОДЕНЬ УКРАЇНИ» (ЄДРПОУ 43722769).
+
+Програмне забезпечення охороняється Законом України «Про авторське право і
+суміжні права», Цивільним кодексом України та міжнародними договорами, згода
+на обов'язковість яких надана Верховною Радою України.
+
+2. ОБМЕЖЕННЯ
+
+Без попередньої письмової згоди правовласника забороняється:
+
+   а) використовувати Програмне забезпечення або будь-яку його частину;
+   б) відтворювати, копіювати, зберігати чи розповсюджувати його в будь-якій
+      формі та будь-яким способом;
+   в) вносити зміни, переробляти, створювати похідні твори;
+   г) передавати, надавати субліцензії, здавати в оренду, продавати або
+      іншим чином відчужувати права на нього;
+   д) декомпілювати, дизасемблювати або іншим чином намагатися отримати
+      вихідний код, якщо такий доступ не наданий прямо;
+   е) оприлюднювати Програмне забезпечення або його частини.
+
+3. КОМПОНЕНТИ ТРЕТІХ ОСІБ
+
+Програмне забезпечення містить компоненти з відкритим вихідним кодом, які
+поширюються на умовах власних ліцензій їхніх правовласників. Ці умови мають
+переважну силу щодо відповідних компонентів. Перелік таких компонентів та
+їхніх ліцензій наведено у SBOM проєкту.
+
+Ця Ліцензія поширюється виключно на оригінальні частини Програмного
+забезпечення, створені для ТОВ «ВОДЕНЬ УКРАЇНИ».
+
+4. ВІДСУТНІСТЬ ГАРАНТІЙ
+
+ПРОГРАМНЕ ЗАБЕЗПЕЧЕННЯ НАДАЄТЬСЯ «ЯК Є», БЕЗ БУДЬ-ЯКИХ ГАРАНТІЙ, ПРЯМИХ ЧИ
+ТАКИХ, ЩО МАЮТЬСЯ НА УВАЗІ, ВКЛЮЧАЮЧИ, АЛЕ НЕ ОБМЕЖУЮЧИСЬ, ГАРАНТІЯМИ
+ПРИДАТНОСТІ ДЛЯ КОНКРЕТНОЇ МЕТИ ТА ВІДСУТНОСТІ ПОРУШЕНЬ ПРАВ ТРЕТІХ ОСІБ.
+
+Дані, звіти та документи, які формує Програмне забезпечення, не є
+сертифікатами, виданими акредитованим органом із сертифікації, і самі собою
+не підтверджують відповідність будь-якій схемі сертифікації.
+
+5. КОНТАКТИ
+
+Щодо ліцензування звертайтеся до ТОВ «ВОДЕНЬ УКРАЇНИ»,
+01015, м. Київ, вул. Лаврська, буд. 20, Україна.
+
+--------------------------------------------------------------------------
+ENGLISH
+--------------------------------------------------------------------------
+
+1. RIGHTS HOLDER
+
+This software, including its source code, object code, configuration, data
+schemas, smart contracts and accompanying documentation (together, the
+"Software"), is a copyrighted work.
+
+All economic intellectual property rights in the Software belong in full to
+HYDROGEN UKRAINE LLC (EDRPOU 43722769).
+
+The Software is protected by the Law of Ukraine "On Copyright and Related
+Rights", the Civil Code of Ukraine, and applicable international treaties.
+
+2. RESTRICTIONS
+
+Without the prior written permission of the rights holder, you may not:
+
+   a) use the Software or any part of it;
+   b) reproduce, copy, store or distribute it in any form or by any means;
+   c) modify, adapt, or create derivative works;
+   d) transfer, sublicense, lease, sell or otherwise dispose of rights in it;
+   e) decompile, disassemble or otherwise attempt to derive source code where
+      such access has not been expressly granted;
+   f) publish or disclose the Software or any part of it.
+
+3. THIRD-PARTY COMPONENTS
+
+The Software incorporates open-source components distributed under their own
+licences. Those licence terms prevail with respect to the components they
+cover. Such components and their licences are listed in the project SBOM.
+
+This Licence applies solely to the original portions of the Software created
+for HYDROGEN UKRAINE LLC.
+
+4. NO WARRANTY
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF FITNESS FOR A
+PARTICULAR PURPOSE AND NONINFRINGEMENT.
+
+Data, reports and documents produced by the Software are not certificates
+issued by an accredited certification body and do not by themselves establish
+conformity with any certification scheme.
+
+5. CONTACT
+
+For licensing enquiries, contact HYDROGEN UKRAINE LLC,
+20 Lavrska St., Kyiv 01015, Ukraine.
